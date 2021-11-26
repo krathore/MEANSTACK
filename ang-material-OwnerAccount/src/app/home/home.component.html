@@ -1,19 +1,15 @@
 <section fxLayout="column" fxFlexAlign="stretch"> 
-    <div fxFlexAlign="center"> 
+    <!-- <div fxFlexAlign="center"> 
         <p>Welcome to the Material Angular OwnerAccount Application</p> 
-    </div>
+    </div> -->
 
-    <p>In this application we are going to work with:</p> 
+    <p>Brwose By Product type:</p> 
 
-    <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
-        <mat-tab label="Material Components"> 
-          <p>We are going to use different material components to create nice looking angular app.</p> 
-        </mat-tab>
-        <mat-tab label="Consume .NET Core Web API">
-           <p>We will consume our .NET Core application. Basically, we will create complete CRUD client app.</p>
-          </mat-tab>
-        <mat-tab label="Fully responsive navigation menu">
-           <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar as well.</p>
-          </mat-tab>
-      </mat-tab-group>
+    <mat-grid-list cols="4" rowHeight="100px" gutterSize="5px">
+  <mat-grid-tile *ngFor="let tile of tiles"
+ [style.border]="tile.border">
+ {{tile.text}}
+ </mat-grid-tile>
+ </mat-grid-list>
+ 
 </section>

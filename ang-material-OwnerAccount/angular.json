@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "ang-material-owneraccount"
+  "defaultProject": "ang-material-owneraccount",
+  "cli": {
+    "analytics": "14985b13-7fdf-4673-887f-0dcccdb6153e"
+  }
 }
